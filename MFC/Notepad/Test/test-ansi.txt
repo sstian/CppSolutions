@@ -1,0 +1,80 @@
+啊发发安抚啊安抚 安抚 
+CMenu::EnableMenuItem
+
+UINT EnableMenuItem( UINT nIDEnableItem, UINT nEnable );
+
+返回值：
+返回以前的状态(MF_DISABLED, MF_ENABLED, 或MF_GRAYED)，如果无效，则返回-1。
+
+参数： nIDEnableItem 指定由nEnable决定的将要有效的菜单项。该参数既可以指定弹出菜单项，也可以指定标准菜单项。  
+nEnable 指定了将要进行的动作。它可以是MF_DISABLED, MF_ENABLED,或MF_GRAYED与 MF_BYCOMMAND或MF_BYPOSITION的组合。这些值通过位与操作进行组合。这些值有下列含义： · MF_BYCOMMAND 指定参数给出已存在的菜单项的命令ID号。此为缺省值。  
+· MF_BYPOSITION 指定参数给出已存在菜单项的位置。第一项所在的位置是0。  
+· MF_DISABLED 使菜单项无效，以便它不能被选择，但不变灰。  
+· MF_ENABLED 使菜单项有效，以便它能够被选择，并可从变灰的状态中恢复出来。  
+· MF_GRAYED 使菜单项无效，以便它不能被选择并同时变灰。  
+ 
+
+说明：
+使菜单项有效、无效或变灰。CreateMenu,InsertMenu,ModifyMenu和LoadMenuIndirect成员函数同时也设置菜单项的状态（有效、无效、或变灰）。
+使用MF_BYPOSITION的值需要应用恰当的CMenu对象。若菜单条的CMenu被使用，那么顶层菜单项（菜单条中的某项）将受影响。如果为了在弹出菜单或嵌套的弹出菜单中通过位置来设置项的状态，那么应用必须指定弹出菜单的CMenu。
+当应用指定了MF_BYCOMMAND标志，那么Windows将检测所有的属于CMenu的弹出菜单项。因此，除非当前正在复制菜单项，那么使用菜单条的CMenu是非常有效的。
+CMenu::EnableMenuItem
+
+UINT EnableMenuItem( UINT nIDEnableItem, UINT nEnable );
+
+返回值：
+返回以前的状态(MF_DISABLED, MF_ENABLED, 或MF_GRAYED)，如果无效，则返回-1。
+
+参数： nIDEnableItem 指定由nEnable决定的将要有效的菜单项。该参数既可以指定弹出菜单项，也可以指定标准菜单项。  
+nEnable 指定了将要进行的动作。它可以是MF_DISABLED, MF_ENABLED,或MF_GRAYED与 MF_BYCOMMAND或MF_BYPOSITION的组合。这些值通过位与操作进行组合。这些值有下列含义： · MF_BYCOMMAND 指定参数给出已存在的菜单项的命令ID号。此为缺省值。  
+· MF_BYPOSITION 指定参数给出已存在菜单项的位置。第一项所在的位置是0。  
+· MF_DISABLED 使菜单项无效，以便它不能被选择，但不变灰。  
+· MF_ENABLED 使菜单项有效，以便它能够被选择，并可从变灰的状态中恢复出来。  
+· MF_GRAYED 使菜单项无效，以便它不能被选择并同时变灰。  
+ 
+
+说明：
+使菜单项有效、无效或变灰。CreateMenu,InsertMenu,ModifyMenu和LoadMenuIndirect成员函数同时也设置菜单项的状态（有效、无效、或变灰）。
+使用MF_BYPOSITION的值需要应用恰当的CMenu对象。若菜单条的CMenu被使用，那么顶层菜单项（菜单条中的某项）将受影响。如果为了在弹出菜单或嵌套的弹出菜单中通过位置来设置项的状态，那么应用必须指定弹出菜单的CMenu。
+当应用指定了MF_BYCOMMAND标志，那么Windows将检测所有的属于CMenu的弹出菜单项。因此，除非当前正在复制菜单项，那么使用菜单条的CMenu是非常有效的。
+
+CMenu::EnableMenuItem
+
+UINT EnableMenuItem( UINT nIDEnableItem, UINT nEnable );
+
+返回值：
+返回以前的状态(MF_DISABLED, MF_ENABLED, 或MF_GRAYED)，如果无效，则返回-1。
+
+参数： nIDEnableItem 指定由nEnable决定的将要有效的菜单项。该参数既可以指定弹出菜单项，也可以指定标准菜单项。  
+nEnable 指定了将要进行的动作。它可以是MF_DISABLED, MF_ENABLED,或MF_GRAYED与 MF_BYCOMMAND或MF_BYPOSITION的组合。这些值通过位与操作进行组合。这些值有下列含义： · MF_BYCOMMAND 指定参数给出已存在的菜单项的命令ID号。此为缺省值。  
+· MF_BYPOSITION 指定参数给出已存在菜单项的位置。第一项所在的位置是0。  
+· MF_DISABLED 使菜单项无效，以便它不能被选择，但不变灰。  
+· MF_ENABLED 使菜单项有效，以便它能够被选择，并可从变灰的状态中恢复出来。  
+· MF_GRAYED 使菜单项无效，以便它不能被选择并同时变灰。  
+ 
+
+说明：
+使菜单项有效、无效或变灰。CreateMenu,InsertMenu,ModifyMenu和LoadMenuIndirect成员函数同时也设置菜单项的状态（有效、无效、或变灰）。
+使用MF_BYPOSITION的值需要应用恰当的CMenu对象。若菜单条的CMenu被使用，那么顶层菜单项（菜单条中的某项）将受影响。如果为了在弹出菜单或嵌套的弹出菜单中通过位置来设置项的状态，那么应用必须指定弹出菜单的CMenu。
+当应用指定了MF_BYCOMMAND标志，那么Windows将检测所有的属于CMenu的弹出菜单项。因此，除非当前正在复制菜单项，那么使用菜单条的CMenu是非常有效的。
+
+CMenu::EnableMenuItem
+
+UINT EnableMenuItem( UINT nIDEnableItem, UINT nEnable );
+
+返回值：
+返回以前的状态(MF_DISABLED, MF_ENABLED, 或MF_GRAYED)，如果无效，则返回-1。
+
+参数： nIDEnableItem 指定由nEnable决定的将要有效的菜单项。该参数既可以指定弹出菜单项，也可以指定标准菜单项。  
+nEnable 指定了将要进行的动作。它可以是MF_DISABLED, MF_ENABLED,或MF_GRAYED与 MF_BYCOMMAND或MF_BYPOSITION的组合。这些值通过位与操作进行组合。这些值有下列含义： · MF_BYCOMMAND 指定参数给出已存在的菜单项的命令ID号。此为缺省值。  
+· MF_BYPOSITION 指定参数给出已存在菜单项的位置。第一项所在的位置是0。  
+· MF_DISABLED 使菜单项无效，以便它不能被选择，但不变灰。  
+· MF_ENABLED 使菜单项有效，以便它能够被选择，并可从变灰的状态中恢复出来。  
+· MF_GRAYED 使菜单项无效，以便它不能被选择并同时变灰。  
+ 
+
+说明：
+使菜单项有效、无效或变灰。CreateMenu,InsertMenu,ModifyMenu和LoadMenuIndirect成员函数同时也设置菜单项的状态（有效、无效、或变灰）。
+使用MF_BYPOSITION的值需要应用恰当的CMenu对象。若菜单条的CMenu被使用，那么顶层菜单项（菜单条中的某项）将受影响。如果为了在弹出菜单或嵌套的弹出菜单中通过位置来设置项的状态，那么应用必须指定弹出菜单的CMenu。
+当应用指定了MF_BYCOMMAND标志，那么Windows将检测所有的属于CMenu的弹出菜单项。因此，除非当前正在复制菜单项，那么使用菜单条的CMenu是非常有效的。
+

@@ -1,0 +1,69 @@
+﻿// CharsMapHandlers.idl: CharsMapHandlers 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 生成类型库(CharsMapHandlers.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(b3246898-ab70-4501-b1de-838c8b1ad0e8),
+	pointer_default(unique)
+]
+interface IPreview : IUnknown
+{
+};
+
+[
+	object,
+	uuid(80b776bf-7aa6-4089-ac06-04933c0a2efe),
+	pointer_default(unique)
+]
+interface IThumbnail : IUnknown
+{
+};
+
+[
+	object,
+	uuid(2d9483b4-fec3-45c5-870b-1e9ead43f11a),
+	pointer_default(unique)
+]
+interface ISearch : IUnknown
+{
+};
+
+[
+	uuid(300b8eb0-c530-4ac2-bccc-42c75e20abbe),
+	version(1.0),
+]
+library CharsMapHandlersLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(fc5886e5-11af-47bd-82ea-830b1e1e4599)
+	]
+	coclass Preview
+	{
+		[default] interface IPreviewHandler;
+	};
+	[
+		uuid(e42eb59b-eb55-49ae-8cbb-df42a6b0be71)
+	]
+	coclass Thumbnail
+	{
+		[default] interface IThumbnailProvider;
+	};
+	[
+		uuid(b554cf36-a368-4523-9690-2420ec314e33)
+	]
+	coclass Search
+	{
+		[default] interface IFilter;
+	};
+};
+
+import "shobjidl.idl";
+import "thumbcache.idl";
+import "filter.idl";

@@ -1,0 +1,51 @@
+Log file created at: 2020/06/04 14:23:27
+Running on machine: SNOW-ANGEL
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20200604 14:23:27.509634  2012 main_glogtest.cpp:57] char[] - hello log!
+I20200604 14:23:27.519625  2012 main_glogtest.cpp:58] string - hello log!
+I20200604 14:23:27.519625  2012 main_glogtest.cpp:59] info test hello log!
+W20200604 14:23:27.519625  2012 main_glogtest.cpp:60] warning test
+E20200604 14:23:27.522624  2012 main_glogtest.cpp:61] error test
+I20200604 14:23:27.523624  2012 main_glogtest.cpp:67] info test 1
+I20200604 14:23:27.524623  2012 main_glogtest.cpp:74] LOG_EVERY_N: 1th cookie
+I20200604 14:23:27.524623  2012 main_glogtest.cpp:81] LOG_FIRST_N: 1th cookie
+I20200604 14:23:27.524623  2012 main_glogtest.cpp:67] info test 2
+I20200604 14:23:27.525622  2012 main_glogtest.cpp:81] LOG_FIRST_N: 2th cookie
+I20200604 14:23:27.525622  2012 main_glogtest.cpp:67] info test 3
+I20200604 14:23:27.525622  2012 main_glogtest.cpp:81] LOG_FIRST_N: 3th cookie
+I20200604 14:23:27.525622  2012 main_glogtest.cpp:67] info test 4
+I20200604 14:23:27.526625  2012 main_glogtest.cpp:81] LOG_FIRST_N: 4th cookie
+I20200604 14:23:27.526625  2012 main_glogtest.cpp:67] info test 5
+I20200604 14:23:27.526625  2012 main_glogtest.cpp:81] LOG_FIRST_N: 5th cookie
+I20200604 14:23:27.526625  2012 main_glogtest.cpp:67] info test 6
+I20200604 14:23:27.526625  2012 main_glogtest.cpp:81] LOG_FIRST_N: 6th cookie
+I20200604 14:23:27.527621  2012 main_glogtest.cpp:67] info test 7
+I20200604 14:23:27.527621  2012 main_glogtest.cpp:81] LOG_FIRST_N: 7th cookie
+I20200604 14:23:27.527621  2012 main_glogtest.cpp:67] info test 8
+I20200604 14:23:27.527621  2012 main_glogtest.cpp:81] LOG_FIRST_N: 8th cookie
+I20200604 14:23:27.527621  2012 main_glogtest.cpp:67] info test 9
+I20200604 14:23:27.530619  2012 main_glogtest.cpp:81] LOG_FIRST_N: 9th cookie
+I20200604 14:23:27.530619  2012 main_glogtest.cpp:67] info test 10
+I20200604 14:23:27.530619  2012 main_glogtest.cpp:81] LOG_FIRST_N: 10th cookie
+I20200604 14:23:27.530619  2012 main_glogtest.cpp:67] info test 11
+I20200604 14:23:27.531618  2012 main_glogtest.cpp:70] LOG_IF: Got lots of cookies 11
+I20200604 14:23:27.531618  2012 main_glogtest.cpp:74] LOG_EVERY_N: 11th cookie
+I20200604 14:23:27.531618  2012 main_glogtest.cpp:77] LOG_IF_EVERY_N: Got the 11th big cookie
+I20200604 14:23:27.531618  2012 main_glogtest.cpp:67] info test 12
+I20200604 14:23:27.532618  2012 main_glogtest.cpp:70] LOG_IF: Got lots of cookies 12
+I20200604 14:23:27.533617  2012 main_glogtest.cpp:67] info test 13
+I20200604 14:23:27.533617  2012 main_glogtest.cpp:70] LOG_IF: Got lots of cookies 13
+I20200604 14:23:27.536614  2012 main_glogtest.cpp:67] info test 14
+I20200604 14:23:27.537614  2012 main_glogtest.cpp:70] LOG_IF: Got lots of cookies 14
+I20200604 14:23:27.538614  2012 main_glogtest.cpp:67] info test 15
+I20200604 14:23:27.541612  2012 main_glogtest.cpp:70] LOG_IF: Got lots of cookies 15
+I20200604 14:23:27.541612  2012 main_glogtest.cpp:67] info test 16
+I20200604 14:23:27.543617  2012 main_glogtest.cpp:70] LOG_IF: Got lots of cookies 16
+I20200604 14:23:27.544610  2012 main_glogtest.cpp:67] info test 17
+I20200604 14:23:27.545609  2012 main_glogtest.cpp:70] LOG_IF: Got lots of cookies 17
+I20200604 14:23:27.546609  2012 main_glogtest.cpp:67] info test 18
+I20200604 14:23:27.546609  2012 main_glogtest.cpp:70] LOG_IF: Got lots of cookies 18
+I20200604 14:23:27.547608  2012 main_glogtest.cpp:67] info test 19
+I20200604 14:23:27.548607  2012 main_glogtest.cpp:70] LOG_IF: Got lots of cookies 19
+I20200604 14:23:27.550609  2012 main_glogtest.cpp:67] info test 20
+I20200604 14:23:27.552606  2012 main_glogtest.cpp:70] LOG_IF: Got lots of cookies 20

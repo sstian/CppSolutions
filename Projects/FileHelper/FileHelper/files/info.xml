@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Info num="3">
+    <Student class="A" id="1" flag="10">
+        <name>Jack</name>
+        <score>88</score>
+        <city>Beijing</city>
+    </Student>
+    <Student class="A" id="2" flag="20">
+        <name>Tom</name>
+        <score>90</score>
+        <city>Shanghai</city>
+    </Student>
+    <Student class="B" id="3" flag="30">
+        <name>Lary</name>
+        <score>96</score>
+        <city>Shenzhen</city>
+    </Student>
+</Info>

@@ -1,0 +1,20 @@
+v1
+ADX
+
+03/23/18 08:11 AM
+Bits = 14
+Sampling Rate = 400000000.000
+Frequency in = 0.000000
+2's compliment = Yes
+Data Format = Decimal
+
+Raw Captured Data:
+7832	8472
+7580	8460
+8644	8476
+9272	8476
+8948	8484
+7596	8472
+7576	8476
+8464	8472
+9240	8472

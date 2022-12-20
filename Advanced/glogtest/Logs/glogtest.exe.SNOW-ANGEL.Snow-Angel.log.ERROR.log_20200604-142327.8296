@@ -1,0 +1,4 @@
+Log file created at: 2020/06/04 14:23:27
+Running on machine: SNOW-ANGEL
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E20200604 14:23:27.522624  2012 main_glogtest.cpp:61] error test

@@ -1,0 +1,48 @@
+	WCHAR,CHAR,TCHAR的区别
+
+现在C++的字符分成两种类型wchar_t和char。  
+其中,WCHAR==wchar_t，CHAR==char。  
+
+TCHAR是一种条件编译的类型根据条件可以代表wchar_t或char，根据是否支持unicode而不同：
+在程序使用sizeof(TCAHR)，当默认设置时，这个值是1；当定义UNICODE宏时，这个值是2。 
+CHAR实际上就是unsigned char。
+WCHAR为宽字符。
+ 
+WCHAR,CHAR,TCHAR的关系实际上是这样的：
+   
+#ifdef   UNICODE    
+          typedef   wchar_t   TCHAR;    
+#else    
+          typedef   unsigned   char   TCHAR;    
+#endif    
+     
+typedef   unsigned   char   CHAR;    
+typedef   unsigned   wchar_t   WCHAR; 
+ 
+
+	Windows使用两种字符集ANSI和UNICODE,
+前者就是通常使用的单字节方式，但这种方式处理象中文这样的双字节字符不方便，容易出现半个汉字的情况。
+而后者是双字节方式，方便处理双字节字符。
+Windows NT的所有与字符有关的函数都提供两种方式的版本，而Windows 9x只支持ANSI方式。_T一般同字常数相关，如_T("Hello")。
+如果你编译一个程序为ANSI方式，_T实际不起任何作用。
+而如果编译一个程序为UNICODE方式，则编译器会把"Hello"字符串以UNICODE方式保存。
+_T()和_L()的区别在于，_L不管你是以什么方式编译，一律以以 UNICODE 方式保存。
+ 
+	Visual C++里边定义字符串的时候，用_T来保证兼容性，VC支持ascii和unicode两种字符类型，
+用_T可以保证从ascii编码类型转换到unicode编码类型的时候，程序不需要修改。
+
+	如果将来你不打算升级到unicode，那么也不需要_T，
+unicode，第个字符使用2个字节，包含了世界上几乎所有语言，每种语言的每一个字符在unicode里的值都是惟一的。
+ASCII 码使用指定的 7 位或 8 位二进制数组合来表示 128 或 256 种可能的字符。
+标准 ASCII 码也叫基础ASCII码，使用 7 位二进制数来表示所有的大写和小写字母，数字 0 到 9、标点符号， 
+以及在美式英语中使用的特殊控制字符。不能适用于多语言平台。
+
+ANSI
+	为使计算机支持更多语言，通常使用 0x80~0xFF 范围的 2 个字节来表示 1 个字符。
+比如：汉字 '中' 在中文操作系统中，使用 [0xD6,0xD0] 这两个字节存储。
+　　不同的国家和地区制定了不同的标准，由此产生了 GB2312, BIG5, JIS 等各自的编码标准。
+这些使用 2 个字节来代表一个字符的各种汉字延伸编码方式，称为 ANSI 编码。
+在简体中文系统下，ANSI 编码代表 GB2312 编码，在日文操作系统下，ANSI 编码代表 JIS 编码。
+	不同 ANSI 编码之间互不兼容，当信息在国际间交流时，无法将属于两种语言的文字，存储在同一段 ANSI 编码的文本中。
+
+（***注：为保证兼容性，建议使用 _T(x) 宏 和 TCHAR 字符类型说明符）
